@@ -51,16 +51,4 @@ outString += "Greatest Decrease in Profits: %s ($%d)\n" % (maxDecreaseDate, maxD
 print(outString)
 fh = open("result.txt","w")
 fh.write(outString)
-
-print("Total Months: ", numOfMonths)   
-print("Total: $",total)
-print("Average Change: $","%.2f"% averageChange) 
-print("Greatest Increase in Profits: ",maxIncreaseDate,"($", maxIncrease,")")
-print("Greatest Decrease in Profits: ",maxDecreaseDate,"($", maxDecrease,")")       
-
-fh.write("Total Months: %d\n" % numOfMonths)   
-fh.write("Total: $%d\n" % total)
-fh.write("Average Change: $%.2f\n" % averageChange) 
-fh.write("Greatest Increase in Profits: %s ($%d)\n" % (maxIncreaseDate, maxIncrease))
-fh.write("Greatest Decrease in Profits: %s ($%d)\n" % (maxDecreaseDate, maxDecrease))     
 fh.close()

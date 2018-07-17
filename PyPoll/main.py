@@ -49,6 +49,7 @@ with open(csvpath, 'r') as csvfile:
     print(outString)
     fh = open("result.txt","w")
     fh.write(outString)
+    fh.close()
     
 
 
